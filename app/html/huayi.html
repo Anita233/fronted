@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>花艺</title>
+	<link rel="stylesheet" type="text/css" href="/css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="/css/huayi.css"/>
+</head>
+<body>
+	<header></header>
+	<div id="container" style="background: #fce4ec;">
+		<ul class="items">
+			<li style="margin-right:135px">鲜花</li>
+			<li style="margin-right:135px">永生花</li>
+			<li>星座守护</li>
+		</ul>
+		<div id="flower">
+			<ul id="flowerlist">
+				<script type="text/html" id="pro-template">
+					{{each flowers item i}}
+						<li style="width:315px;height:450px; background: #fff;">
+							<div><img src="{{ item.img }}" alt=""></div>
+							<p class="desc">{{ item.description }}</p>
+							<p class="price">
+								价格：<span>{{ item.price }}</span>
+								<a href="/html/detail.html?id={{item.id}}">详情页</a>
+							</p>
+							<p class="_id" style="visibility: hidden">{{item.id}}</p>
+							<button class="add-to-cart">+</button>
+						</li>
+					{{/each}}
+				</script>
+			</ul>
+		</div>
+
+
+	</div>
+	<footer></footer>
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/huayi.js"></script>
+</body>
+</html>
+

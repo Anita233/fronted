@@ -1,0 +1,21 @@
+div.footer_content {
+	width:1002px;
+	margin:25px auto 0;
+	.footer {
+		height:16px;
+		overflow:hidden;
+		margin-bottom:50px;
+		.links {
+			float:left;
+			a {float:left; margin-right:23px;font-size:13px;font-weight:600;color:#878787;}
+		}
+		.copyright {float:right;font-size:12px;color:#878787;}
+	}
+
+	.code {
+		
+		height:87px;
+		img.code_img {width:86px;height:87px;float:left;margin-right:25px;}
+		.text {width:100px;line-height:22px;font-size:12px;color:#878787;float:left;margin-right:40px;}
+	}
+}

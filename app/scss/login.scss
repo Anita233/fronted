@@ -1,0 +1,60 @@
+body {
+	padding:0;
+	margin:0;
+	background:#fce4ec;
+	overflow:hidden;
+}
+.form {
+	overflow:hidden;
+	width:527px;
+	height:430px;
+	margin:230px auto 0;
+	background:#fff;
+	border-radius:10px;
+	img.logo_re{display:block;margin:35px auto 0;}
+	.login1 {display:block;margin:35px auto 0;}
+	.login2 {display:block;margin:0 auto;vertical-align:top;
+	}
+	input{
+		display:block;
+		width:305px;
+		height:34px;
+		border:1px solid #dfdfdf;
+		border-radius:8px;
+		margin:14px auto;
+	}
+	button {
+		display:block;
+		width:305px;
+		height:34px;
+		background:#f3b5c1;
+		color:#fff;
+		font-size:14px;
+		border:none;
+		border-radius:10px;
+		margin:25px auto 0;
+	}
+	div.links_login {
+		width:305px;
+		height:40px;
+		margin:15px auto 0;
+		a {
+			display:inline-block;
+			text-decoration:none;
+			color:#969696;
+			font-size:12px;
+			font-weight:600;
+		}
+		a.forget {float:left;}
+		a.regist {float:right;}
+	}
+	a.qq_con {
+		display:block;
+		margin:0 auto;
+		width:305px;
+		height:50px;
+		text-align:center;
+		line-height:50px;
+		margin-top:10px;
+	}
+}

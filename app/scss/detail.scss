@@ -1,0 +1,54 @@
+@import "component/reset.scss";
+@import "component/header.scss";
+@import "component/footer.scss";
+
+div#container {overflow:hidden;}
+ul.items {
+	overflow:hidden;
+	width:580px;
+	height:38px;
+	margin: 65px auto 60px;
+	font-size:22px;
+	li {float:left;color:#575757;}
+}
+
+div#flower {
+	width:1002px;
+	height:550px;
+	margin:0 auto;
+	img {float:left;margin-right:40px;}
+	div#details {
+	width:290px;
+	float:left;
+		p.desc {
+			width:290px;
+			height:45px;
+			font-sie:18px;
+			color:#575757;
+			margin-bottom:30px;
+		}
+		p.price {
+			margin-bottom:15px;
+			span {
+				display:block;
+				color:#e66d84;
+				margin-bottom:15px;
+			}
+			a {
+				display:inline-block;
+				width:140px;
+				height:40px;
+				line-height:40px;
+			}
+			a.add {
+				background:#e66d84;
+				text-align:center;
+			}
+			a.talk {
+				background:#edb272;
+				text-align:center;
+			}
+		}
+	}
+}
+

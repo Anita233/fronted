@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>我的花篮</title>
+	<link rel="stylesheet" type="text/css" href="/css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="/css/hualan.css"/>
+</head>
+<body>
+	<header></header>
+	<div id="container">
+		<img src="/images/hualan.jpg">
+		<table>
+			<thead>
+				<tr class="title">
+					<td width="480px">商品</td>
+					<td width="145px">价格</td>
+					<td width="153px">数量</td>
+					<td width="162px">小计</td>
+					<td>操作</td>
+				</tr>
+			</thead>
+			<script type="text/html" id="pro-template">
+			<tbody>
+				
+					{{each flowers item i}}
+						<tr >
+							<td>{{item._name}}</td>
+							<td>{{item.price}}</td>
+							<td>
+								<a href='javascript:;' class= "Jian">-</a>
+	 								<input class = "iNum" type="text" value = "{{item.num}}">
+								<a href='javascript:;' class= "Jia">+</a>
+							</td>	
+							<td>
+								<a href='javascript:;' class='del'>删除</a>
+ 							</td>
+						</tr>
+					{{/each}}
+				
+			</tbody>
+			</script>
+		</table>
+		<p class="action">
+			<a href="#" class="delete">删除所有商品</a>
+			<a href="#" class="sum">
+				合计￥
+				<span></span>
+			</a>
+		</p>
+	</div>
+	<footer></footer>
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/hualan.js"></script>
+</body>
+</html>
+

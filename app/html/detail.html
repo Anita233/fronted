@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>详情页</title>
+	<link rel="stylesheet" type="text/css" href="/css/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="/css/detail.css"/>
+</head>
+<body>
+	<header></header>
+	<div id="container" style="background: #fce4ec;">
+		<ul class="items">
+			<li style="margin-right:135px">鲜花</li>
+			<li style="margin-right:135px">永生花</li>
+			<li>星座守护</li>
+		</ul>
+		<div id="flower">
+			<div id="flowerlist">
+				<script type="text/html" id="detail-template">
+					<img src="{{ item.img }}" alt="">
+					<div id="details">
+						<p class="desc">{{ item.desciption }}</p>
+						<p class="price">
+								<span>价格：{{ item.price }}</span><br>
+								<a href="javascript:;" class="add">加入花篮</a>
+								<a href="javascript:;" class="talk">在线咨询</a>
+						</p>
+						<p class="story">
+							有人说马卡龙甜的发腻，有人说就爱这甜到心里的腻，粉色雪山玫瑰搭配粉蓝斜条包装纸，独一份，腻在心里的滋味。仅限上海订购，上海中环以内地区免费配送，如果您的地址超出免费配送范围，请联系客服 400-005-2570咨询快递配送费用。
+						</p>
+					</div>
+				</script>
+			</div>
+		</div>
+
+
+	</div>
+	<footer></footer>
+	<script type="text/javascript" src="/libs/require/require.js" data-main="/js/detail.js"></script>
+</body>
+</html>

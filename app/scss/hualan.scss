@@ -1,0 +1,36 @@
+@import "component/reset.scss";
+@import "component/header.scss";
+@import "component/footer.scss";
+
+
+#container {
+	min-height:657px;
+	background:#f8f8f8;
+
+	img {
+		margin-left:132px;
+		margin-top:44px;
+		margin-bottom:55px;
+	}
+	table {
+		width:1002px;
+		margin:0 auto 35px;;
+		thead tr td{heigth:30px; border-bottom:1px solid #cecece;}
+	}
+	p.action {
+		font-size:12px;
+		width:1002px;
+		margin:0 auto;
+		a.delete {float:left;}
+		a.sum {	
+			float:right;
+			span{
+				display:inline-block;
+				width:83px;
+				height:45px;
+				font-size:15px;
+				font-weight:600;
+			}
+		}
+	}
+}
